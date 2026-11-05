@@ -1,0 +1,17 @@
+[package]
+name = "chesskiller-rust"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "ChessKiller: a Lichess chess bot (Rust port) that plays with Stockfish."
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+dotenvy = "0.15"
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde_json = "1"
+
+# Keep unsafe forbidden unless a real need appears (see docs/agents/rust.md).
+[lints.rust]
+unsafe_code = "forbid"

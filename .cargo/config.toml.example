@@ -1,0 +1,9 @@
+# Copy this file to `.cargo/config.toml` on your machine.
+#
+# The real `.cargo/config.toml` is gitignored because it holds an absolute,
+# machine-specific path (and would leak your Windows username if published).
+#
+# Set `linker` to the gcc.exe of your MinGW-w64 install, for example:
+#   C:\tools\mingw64\bin\gcc.exe
+[target.x86_64-pc-windows-gnu]
+linker = 'C:\path\to\mingw\mingw64\bin\gcc.exe'

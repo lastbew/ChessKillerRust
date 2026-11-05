@@ -1,0 +1,16 @@
+# Build artifacts (never commit compiled binaries)
+/target
+/*.exe
+
+# Vendored toolchain, engine binaries and archives (large, not source)
+/mingw
+/mingw.zip
+/engines
+
+# Machine-specific linker settings. Tracked template: .cargo/config.toml.example
+/.cargo/config.toml
+
+# Secrets. NEVER commit .env - .env.example is the tracked template.
+/.env
+/.env.*
+!/.env.example
